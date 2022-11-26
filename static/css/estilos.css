@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+body{
+    background-color: #8AA6A3;
+}
+
+.container-logo{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: #4C5958;
+}
+
+.logo{
+    width: 90px;
+}
+
+.carousel{
+    background-color: black;
+}
+
+.carrusel{
+    background-color: #4C5958;
+}
+
+.carousel-item img{
+    height: 330px;
+}
+
+.titulo-introduccion,
+.titulo-pokedex{
+    font-family: 'Nerko One', cursive;
+    font-size: 2.7rem;
+}
+
+.titulo-pokedex{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.parrafo-introduccion{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.7rem;
+}
+
+.contenedor-img{
+    overflow: hidden;
+}
+
+.tarjetas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjeta{
+    border: 3px solid #10403B;
+    width: 25%;
+    margin: 10px 5px;
+}
+
+.card-head{
+    background: url('../img/blob.svg');
+}
+
+.card-text{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2rem;
+}
+
+.card-title{
+    font-family: 'Nerko One', cursive;
+    font-size: 1.7rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta:hover img{
+    transition: all .5s;
+    transform: scale(1.4);
+}
+
+.container-page{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-prev,
+.btn-next{
+    background-color: #10403B;
+    color: #eee;
+}
+
+.btn-prev:hover,
+.btn-next:hover{
+    color: #8AA6A3
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: underline;
+    margin-top: 40px;
+    background-color: #10403B;
+    text-align: left;
+    color: #eee;
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-family: 'Nerko One', cursive;
+    font-size: 2.1rem;
+}

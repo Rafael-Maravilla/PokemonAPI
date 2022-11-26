@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/estilos.css">
+    <link rel="icon" href="static/img/logop.svg">
+    <title>Landing Page Pokémon</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+            <div class="col-md-12 container-logo">
+              <img src="static/img/logop.svg" class="logo" alt="imagen de una pokébola">
+              <img src="static/img/logo.png" class="logo" alt="imagen del nombre de la serie Pokémon">
+            </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="static/img/banner.png" class="d-block w-100" alt="imagen de pikachu del anime pokémon">
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/banner2.jpg" class="d-block w-100" alt="imagen de pokemones del anime de Pokémon">
+                </div>
+                <div class="carousel-item">
+                  <img src="static/img/banner3.jpg" class="d-block w-100" alt="imagen de squirtle, pikachu y sus amigos">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+    </div>
+  </header>
+
+  <main class="container">
+        <section class="row">
+            <article class="col-xs-12 col-sm-7 col-md-7 p-4"> 
+                <h2 class="text-center titulo-introduccion">Pokémon</h2>
+                <p class="parrafo-introduccion"><b>Pokémon</b>  es una franquicia de medios que originalmente comenzó como un videojuego RPG, 
+                  pero debido a su popularidad ha logrado expandirse a otros medios de entretenimiento como series de televisión, películas, 
+                  juegos de cartas, ropa, entre otros, convirtiéndose en una marca que es reconocida en el mercado mundial.</p>
+            </article>
+            <article class="col-xs-12 col-sm-5 col-md-5 contenedor-img" id="seccionTarjetas">
+                <img src="static/img/charizard.png" alt="imagen de charizard">
+            </article>
+        </section>
+
+        <section class="row">
+            <h3 class="col-md-12 text-center mt-5 mb-5 titulo-pokedex">Pokémon API / Pokédex</h3>
+            <div class="container tarjetas" id="contenedor-tarjetas"></div>
+        </section>
+
+        <div class="container-page">
+          <a href="#seccionTarjetas" class="btn btn-prev disabled" id="anterior">Anterior</a> &nbsp;&nbsp; 
+          <a href="#seccionTarjetas" class="btn btn-next" id="siguiente">Siguiente</a>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+      <img src="static/img/logop.svg" class="logo" alt="imagen de una pókebola">
+        <p>PokeAPI - 2022</p>
+      <img src="static/img/logop.svg" class="logo" alt="imagen de una pókebola">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="static/js/consumirAPI.js"></script>
+    <script src="static/js/app.js"></script>
+    
+
+</body>
+</html>
